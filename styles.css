@@ -100,8 +100,8 @@
   position: absolute;
   border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   transform: translateX(-52%);
 }
 .middle::after {
@@ -115,18 +115,23 @@
   background-color: aliceblue;
 }
 .field.circle {
-  background-image: linear-gradient(160deg,
-  transparent, rgba(0, 0, 0, 0.45)),
-  repeating-radial-gradient(circle,
-  #097709 0 49px,
-  #076107 51px 100px);
-  );
-  
+  background-image: linear-gradient(160deg, transparent, rgba(0, 0, 0, 0.45)),
+    repeating-radial-gradient(circle, #188a18 0 49px, #157015 51px 100px);
 }
-body {
-  overflow: hidden;
+.exterior {
+  display: flex;
+  width: 1000px;
+  height: 550px;
+  background-image: linear-gradient(160deg, transparent, rgba(0, 0, 0, 0.45)),
+    repeating-radial-gradient(circle, #188a18 0 49px, #157015 51px 100px);
 }
-#app {
-  perspective: 150px;
-  perspective-origin: bottom;
+.exterior h2 {
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  margin-top: 0rem;
+  padding: 0.8rem 2.8rem;
+
+  margin-left: 20.5rem;
+  position: absolute;
 }
